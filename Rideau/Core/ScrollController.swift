@@ -89,11 +89,6 @@ final class ScrollController {
       isHandlingEvent = false
       return
     }
-
-    if oldValue.y != scrollView.contentOffset.y {
-      isHandlingEvent = false
-      return
-    }
     
     guard isLocking else {
       isHandlingEvent = false
