@@ -106,7 +106,13 @@ final class ScrollController {
     }
 
     previousValue = scrollView.contentOffset
+    
+    debugPrint("Rideau debug previousValue: \(scrollView.contentOffset.x)")
+    debugPrint("Rideau debug previousValue: \(scrollView.contentOffset.y)")
 
+    debugPrint("Rideau debug oldValue: \(oldValue.x)")
+    debugPrint("Rideau debug oldValue: \(oldValue.y)")
+    
     scrollView.setContentOffset(oldValue, animated: false)
     
     isHandlingEvent = false
